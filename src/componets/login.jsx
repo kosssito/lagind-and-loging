@@ -49,7 +49,7 @@ const Login = ({ popup, setPopup }) => {
             <span className="icon">
               <ion-icon name="mail"></ion-icon>
             </span>
-            <input type="email" required />
+            <input type="text" required />
             <label>Email</label>
           </div>
           <div className="input-box">
@@ -94,7 +94,7 @@ const Login = ({ popup, setPopup }) => {
             <span className="icon">
               <ion-icon name="mail"></ion-icon>
             </span>
-            <input type="email" required />
+            <input type="text" required />
             <label>Email</label>
           </div>
           <div className="input-box">
