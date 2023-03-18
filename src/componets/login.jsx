@@ -10,7 +10,10 @@ const Login = ({ popup, setPopup }) => {
   useEffect(() => {
     setWapper({
       ...wappper,
-      active: popup,
+      active: popup.active,
+      menu: popup.menu,
+      name: popup.name,
+      blur: popup.blur
     });
   }, [popup]);
 

@@ -7,7 +7,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index:99;
+    z-index:100;
 }
 
 .logo{
@@ -62,4 +62,60 @@ header {
 .navigation .btnLoging-popup:hover {
     background: #fff;
     color: #162938;
+}
+
+@media (max-width: 876px){
+    .navigation{
+        display: none;
+    }
+    #menu {
+        font-size: 36px;
+        color: #fff;
+        /* display: none; */
+      }
+      .navigation {
+        position: fixed;
+        top: 15%;
+        left: 0;
+        width: 100%;
+        padding: .5rem 4%;
+        display: none;
+       
+    }
+
+    .navigation.active{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation a::after {
+        width: 10%;
+    }
+
+    .navigation a {
+       
+        
+        margin: 1rem;
+    }
+
+    .nav-bg {
+        position: fixed;
+        top: 11.8%;
+        left: 0;
+        width: 100%;
+        height: 350px;
+        background: rgba(255, 255 , 255, .1);
+        border-bottom: 2px solid rgba(255, 255 , 255, .2);
+        backdrop-filter: blur(10px);
+        z-index: 99;
+        display: none;
+    }
+    .nav-bg.active {
+        display: block;
+    }
+
+    .navigation .btnLoging-popup{
+        margin-left: 0px;
+    }
+   
 }
